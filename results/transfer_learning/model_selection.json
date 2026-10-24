@@ -1,0 +1,23 @@
+{
+  "selected_phase": "phase1_frozen_backbone",
+  "validation_loss": 0.4869787096977234,
+  "validation_accuracy": 0.8416886329650879,
+  "phase1_validation_loss": 0.4869787096977234,
+  "phase1_validation_accuracy": 0.8416886329650879,
+  "phase2_validation_loss": 0.4894941449165344,
+  "phase2_validation_accuracy": 0.8416886329650879,
+  "image_size": [
+    224,
+    224
+  ],
+  "class_names": [
+    "cardboard",
+    "glass",
+    "metal",
+    "paper",
+    "plastic",
+    "trash"
+  ],
+  "seed": 42,
+  "batch_size": 32
+}

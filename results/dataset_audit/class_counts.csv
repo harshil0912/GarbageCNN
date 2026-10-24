@@ -1,0 +1,7 @@
+﻿class_name,discovered_images,valid_images,corrupted_images,exact_duplicate_files
+cardboard,403,403,0,0
+glass,501,501,0,3
+metal,410,410,0,1
+paper,594,594,0,0
+plastic,482,482,0,2
+trash,137,137,0,0

@@ -1,0 +1,51 @@
+{
+    "audit_timestamp": "2026-10-20T06:08:45",
+    "dataset_directory": "/mnt/c/GarbageCNN/data/raw/Garbage classification/Garbage classification",
+    "output_directory": "/mnt/c/GarbageCNN/results/dataset_audit",
+    "classes_expected": [
+        "cardboard",
+        "glass",
+        "metal",
+        "paper",
+        "plastic",
+        "trash"
+    ],
+    "missing_class_directories": [],
+    "total_discovered_images": 2527,
+    "total_valid_images": 2527,
+    "total_corrupted_images": 0,
+    "class_counts_valid_images": {
+        "cardboard": 403,
+        "glass": 501,
+        "metal": 410,
+        "paper": 594,
+        "plastic": 482,
+        "trash": 137
+    },
+    "unique_image_dimensions": 1,
+    "most_common_dimensions": [
+        {
+            "width": 512,
+            "height": 384,
+            "count": 2527
+        }
+    ],
+    "image_formats": {
+        "JPEG": 2527
+    },
+    "exact_duplicate_groups": 3,
+    "files_in_exact_duplicate_groups": 6,
+    "extra_exact_duplicate_copies": 3,
+    "exact_duplicate_pairs_reported_as_rows": 6,
+    "near_duplicate_detection_enabled": false,
+    "near_duplicate_pairs": 0,
+    "near_duplicate_threshold": 5,
+    "warnings": [
+        "No original images were deleted, moved, or modified.",
+        "Exact duplicates are based on identical file bytes.",
+        "Near-duplicate matches are candidates for manual review.",
+        "A duplicate match does not automatically mean an image should be removed.",
+        "This script does not determine whether a class label is semantically correct.",
+        "This script does not inspect or alter training/validation/test splits."
+    ]
+}

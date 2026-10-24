@@ -1,0 +1,7 @@
+﻿sha256,relative_path,class_name,duplicate_group_size,classes_in_group,cross_class_duplicate
+81546d1362d75fc60718e5852593c58f66f813e8c1e9d1eae6871fedb02e2868,data/raw/Garbage classification/Garbage classification/glass/glass115.jpg,glass,2,glass; metal,True
+81546d1362d75fc60718e5852593c58f66f813e8c1e9d1eae6871fedb02e2868,data/raw/Garbage classification/Garbage classification/metal/metal91.jpg,metal,2,glass; metal,True
+c41b99aec8a3257c8668a2144ebbaf8042018f0a85d88e22bf4e413b43693dd8,data/raw/Garbage classification/Garbage classification/glass/glass176.jpg,glass,2,glass; plastic,True
+c41b99aec8a3257c8668a2144ebbaf8042018f0a85d88e22bf4e413b43693dd8,data/raw/Garbage classification/Garbage classification/plastic/plastic152.jpg,plastic,2,glass; plastic,True
+e971f4f8f50e960e454ea724cec922fc2988bbf4027aa48b553e139bb5890968,data/raw/Garbage classification/Garbage classification/glass/glass389.jpg,glass,2,glass; plastic,True
+e971f4f8f50e960e454ea724cec922fc2988bbf4027aa48b553e139bb5890968,data/raw/Garbage classification/Garbage classification/plastic/plastic332.jpg,plastic,2,glass; plastic,True

@@ -1,0 +1,7 @@
+{
+  "selected_phase": "phase1_frozen_backbone",
+  "test_loss": 0.3689710795879364,
+  "test_accuracy": 0.8736842274665833,
+  "prediction_accuracy": 0.8736842105263158,
+  "test_image_count": 380
+}

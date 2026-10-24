@@ -1,0 +1,17 @@
+MobileNetV2 Transfer Learning
+Selected phase: phase1_frozen_backbone
+Test loss: 0.368971
+Test accuracy: 0.873684
+
+              precision    recall  f1-score   support
+
+   cardboard     0.9167    0.9016    0.9091        61
+       glass     0.8684    0.8800    0.8742        75
+       metal     0.8750    0.9032    0.8889        62
+       paper     0.9011    0.9213    0.9111        89
+     plastic     0.8529    0.8056    0.8286        72
+       trash     0.7143    0.7143    0.7143        21
+
+    accuracy                         0.8737       380
+   macro avg     0.8547    0.8543    0.8544       380
+weighted avg     0.8734    0.8737    0.8734       380

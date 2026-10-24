@@ -1,0 +1,7 @@
+actual_class,cardboard,glass,metal,paper,plastic,trash
+cardboard,53,2,1,4,0,0
+glass,2,53,8,3,7,3
+metal,1,8,41,4,2,6
+paper,0,1,5,71,5,7
+plastic,2,8,6,3,53,1
+trash,0,0,0,1,0,19

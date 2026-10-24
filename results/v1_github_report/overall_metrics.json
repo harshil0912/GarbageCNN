@@ -1,0 +1,30 @@
+{
+    "model": "Smart Waste Classification V1",
+    "evaluation_timestamp_utc": "2026-10-20T10:20:31.255431+00:00",
+    "test_accuracy": 0.7631578947368421,
+    "test_correct": 290,
+    "test_incorrect": 90,
+    "test_samples": 380,
+    "macro_precision": 0.7444065518910649,
+    "macro_recall": 0.785962047202608,
+    "macro_f1": 0.7547218041285838,
+    "weighted_precision": 0.7742703426242118,
+    "weighted_recall": 0.7631578947368421,
+    "weighted_f1": 0.7650633443434512,
+    "classes": [
+        "cardboard",
+        "glass",
+        "metal",
+        "paper",
+        "plastic",
+        "trash"
+    ],
+    "image_size": [
+        128,
+        128
+    ],
+    "split_seed": 42,
+    "python_version": "3.14.5",
+    "tensorflow_version": "2.22.0-rc0",
+    "note": "Metrics are valid for the reconstructed split only if it exactly matches the original V1 split."
+}
