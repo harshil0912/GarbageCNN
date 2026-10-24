@@ -1,4 +1,4 @@
-# GarbageCNN — Smart Waste Classification Using Deep Learning
+ GarbageCNN — Smart Waste Classification Using Deep Learning
 
 A deep learning project that classifies waste images into six categories using two different approaches: a custom Convolutional Neural Network (CNN) trained from scratch and MobileNetV2 transfer learning.
 
@@ -90,21 +90,8 @@ GarbageCNN/
 │       └── mobilenetv2_phase1_best.keras
 │
 ├── results/
-│   └── [Training and evaluation results]
-│
-└── docs/
-    └── images/
-        ├── dataset_samples.png
-        ├── dataset_distribution.png
-        ├── cnn_architecture.png
-        ├── cnn_training_curves.png
-        ├── cnn_confusion_matrix.png
-        ├── transfer_learning_architecture.png
-        ├── transfer_learning_curves.png
-        ├── transfer_learning_confusion_matrix.png
-        ├── model_comparison.png
-        ├── streamlit_cnn.png
-        └── streamlit_mobilenetv2.png
+   └── [Training and evaluation results]
+
 ```
 
 **Important:** The `docs/images/` files listed above are suggested filenames for documentation images. Create the folder and add the screenshots you actually generate. The dataset and virtual environment do not need to be included in the GitHub repository.
@@ -160,14 +147,11 @@ The custom CNN and MobileNetV2 do not necessarily use identical input dimensions
 
 ### Recommended image: Dataset samples
 
-Place a grid showing several images from each class at:
-
-`docs/images/dataset_samples.png`
+<img width="1143" height="699" alt="dataset_samples png" src="https://github.com/user-attachments/assets/55f9d751-2b02-48cb-ba79-80a064f5a55a" />
 
 Add a class-distribution chart at:
 
-`docs/images/dataset_distribution.png`
-
+<img width="2669" height="1468" alt="dataset_distribution" src="https://github.com/user-attachments/assets/809d09a3-0249-48b6-9254-081214eb898b" />
 
 
 *Figure 1. Representative images from the six waste categories. Add this image after creating the dataset sample grid.*
@@ -243,11 +227,8 @@ The trained model is evaluated using test data. Accuracy, precision, recall, F1-
 
 ### 4.3 CNN architecture visualization
 
-Create a diagram showing the actual architecture from `train.py`, from the input image through the convolutional blocks to the six-class output.
+<img width="1788" height="5200" alt="cnn_architecture" src="https://github.com/user-attachments/assets/215b08ff-cc7d-4981-a13c-73ef09a0ebc2" />
 
-Save it as:
-
-`docs/images/cnn_architecture.png`
 
 
 
@@ -263,18 +244,15 @@ Recommended visualizations:
 - Training and validation loss across epochs.
 - Test-set confusion matrix.
 
-Save them as:
-
-- `docs/images/cnn_training_curves.png`
-- `docs/images/cnn_confusion_matrix.png`
-
-
 
 *Figure 3. Training and validation curves for the custom CNN.*
 
+<img width="2400" height="800" alt="training_curves" src="https://github.com/user-attachments/assets/7712c332-567b-42c7-a559-18be23166eb2" />
 
 
 *Figure 4. Test-set confusion matrix for the custom CNN.*
+
+<img width="1800" height="1800" alt="confusion_matrix" src="https://github.com/user-attachments/assets/aed0b05e-8847-4c0e-ac8f-8c56a5a9a5f2" />
 
 ### 4.5 Custom CNN result
 
@@ -342,13 +320,6 @@ Fine-tuning allows selected pretrained layers to be updated using the target dat
 
 However, fine-tuning does not always improve performance. It can cause overfitting or degrade generalization if the training configuration is unsuitable.
 
-**Step 7 — Select the best checkpoint**
-
-The training process evaluates candidate checkpoints and selects the saved model according to the selection criterion used by the training script.
-
-In the recorded experiment, the selected model was:
-
-`models/transfer_learning/mobilenetv2_best.keras`
 
 **Step 8 — Evaluate the model**
 
@@ -364,7 +335,8 @@ The diagram should distinguish the pretrained feature extractor from the classif
 
 Save it as:
 
-`docs/images/transfer_learning_architecture.png`
+<img width="570" height="1656" alt="mermaid-diagram (2)" src="https://github.com/user-attachments/assets/8165b41f-f6ce-4189-9762-7495b16a633d" />
+
 
 
 
@@ -376,23 +348,14 @@ The transfer-learning experiment includes an initial frozen-backbone phase and a
 
 The recorded results indicate that the selected frozen-backbone checkpoint performed better according to the model-selection process than the fine-tuned alternative.
 
-Recommended images:
-
-- Transfer-learning training and validation curves.
-- Transfer-learning confusion matrix.
-
-Save them as:
-
-- `docs/images/transfer_learning_curves.png`
-- `docs/images/transfer_learning_confusion_matrix.png`
-
-
-
 *Figure 6. Training and validation curves for the MobileNetV2 experiment.*
 
-
+<img width="2781" height="989" alt="training_curves" src="https://github.com/user-attachments/assets/2d44f1a9-7731-46b8-83ae-a5d61a9bdef8" />
 
 *Figure 7. Test-set confusion matrix for MobileNetV2.*
+
+<img width="1555" height="1574" alt="confusion_matrix" src="https://github.com/user-attachments/assets/33410a2e-3e33-4267-a81c-bff7449117fa" />
+
 
 ### 5.6 MobileNetV2 result
 
@@ -462,9 +425,10 @@ The results show that the selected MobileNetV2 model performed particularly well
 
 Create a bar chart comparing test accuracy and, if available, macro F1-score for the two approaches.
 
-Save the image as:
 
-`docs/images/model_comparison.png`
+<img width="1780" height="1079" alt="model_comparison" src="https://github.com/user-attachments/assets/283c23f7-9fd2-41d6-ae4e-7d521a58f17e" />
+
+
 
 
 
@@ -603,43 +567,9 @@ Although the transfer-learning model achieved promising results, several improve
 
 ## 10. Streamlit Application Screenshots
 
-The project includes two user interfaces so that both trained models can be tested interactively.
+<img width="976" height="620" alt="glass_pic1" src="https://github.com/user-attachments/assets/8cf2b5ae-b5c0-462e-ae29-79d11fe7366c" />
 
-### 10.1 Custom CNN — `app.py`
-
-This application uses the CNN trained from scratch. A user uploads a waste image, and the application displays the predicted class and any additional prediction information implemented in the interface.
-
-Save a screenshot of the running application as:
-
-`docs/images/streamlit_cnn.png`
-
-
-
-*Figure 9. Streamlit interface for the custom CNN. Replace this placeholder with an actual application screenshot.*
-
-### 10.2 MobileNetV2 — `app1.py`
-
-This application uses the selected MobileNetV2 transfer-learning model. It allows the user to upload an image and view the predicted waste category, confidence information, and class probabilities where provided by the application.
-
-Save a screenshot of the running application as:
-
-`docs/images/streamlit_mobilenetv2.png`
-
-
-
-*Figure 10. Streamlit interface for MobileNetV2. Replace this placeholder with an actual application screenshot.*
-
-### How to capture the screenshots
-
-1. Start `app.py` using the command in Section 7.
-2. Upload a representative waste image.
-3. Wait for the prediction to appear.
-4. Capture the full application window, including the uploaded image and result.
-5. Save the screenshot as `streamlit_cnn.png` inside `docs/images/`.
-6. Repeat the process with `app1.py`.
-7. Save the second screenshot as `streamlit_mobilenetv2.png` in the same folder.
-
-Use representative images and make sure the predicted class and confidence information are readable.
+<img width="955" height="637" alt="glass_pic_2" src="https://github.com/user-attachments/assets/fb99685d-c244-4273-b873-4b74a4420eaf" />
 
 ---
 
